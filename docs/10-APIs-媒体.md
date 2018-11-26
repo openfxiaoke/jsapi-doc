@@ -63,6 +63,8 @@ JS版本：2.1.0
 | fileSize  | Number    | 否   | 预览文档的文件大小，单位byte  |
 | fileName  | String    | 否   | 预览文档名字  |
 | fileNPath | String    | 是   | 文档所对应的N-Path地址，资源需是存储在纷享平台上，采用N-Path地址引用，如`N_201512_08_101239c8308f4ea7325f69df4fba386f1.pptx`。目前支持的文件后缀有`doc``docx``pdf``ppt``pptx`等通用文档格式。 |
+| isAliCloud  | Boolean    | 否   | 文档url是否是阿里云服务器url  |
+| failureTime  | Long    | 否   | 阿里云url的过期时间，如果是阿里云服务器url,刚需要填写failureTime字段  |
 
 #### 文件上传
 文件上传会有两个阶段的回调：第一阶段在调用接口，并选择完毕文件后，即会通过`onSuccess`回调给业务方，业务方可在这个阶段展示文件的信息；第二阶段在文件上传完毕后，通过`onUpload`将上传结果回调给业务方   
