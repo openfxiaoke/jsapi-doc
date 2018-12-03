@@ -51,6 +51,10 @@ http://www.fxiaoke.com/fsask/index.html?fs_auth=true&fs_auth_appName=纷享问�
             <td>webview.onCloseWebview</td>
             <td>页面关闭回调</td>
         </tr>
+        <tr>
+            <td>webview.redirect</td>
+            <td>终端级灰度重定向</td>
+        </tr>
     </tbody>
 </table>
 
@@ -169,6 +173,28 @@ JS版本：2.0.0
 | ----------| ------------| -----| -------------|
 | onClose    | Function    | 是   | 物理键点击事件回调。如开发者声明了`onClose`，则需注意在最后根据需要调用`FSOpen.webview.close()`实现关闭当前页，否则Webview不会自动关闭。如不声明`onClose`，Webview会自动关闭当前页。 |
 
+#### 终端级灰度重定向
+终端级灰度重定向。
+
+代码样例
+```javascript
+FSOpen.webview.redirect({
+    url:'fs://crm/objectlist/StockObj'
+    onSuccess: function(resp) {
+        alert(resp.url);
+    }
+});
+``` 
+
+方法名：FSOpen.webview.redirect       
+JS版本：2.2.0   
+客户端支持版本：6.5.0及以上   
+
+调用参数说明：     
+
+| 参数      | 类型        | 必须 | 说明         |
+| ----------| ------------| -----| -------------|
+| url    | String    | 是   | 需要进行重定向的url |
 
 ### 屏幕控制 
 
