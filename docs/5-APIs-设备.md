@@ -36,6 +36,10 @@
             <td>device.selectWifi</td>
             <td>从当前的wifi列表选择某wifi</td>
         </tr>
+        <tr>
+            <td>device.scanCard</td>
+            <td>扫名片</td>
+        </tr>
     </tbody>
 </table>
 
@@ -200,3 +204,18 @@ JS版本：2.1.5
 | 参数        | 类型        | 说明                |
 | ------------| ------------| --------------------|
 | name        | String      | 当前wifi名字        |
+
+
+#### 扫名片       
+调用扫名片JSAPI，会跳转到扫名片页面，扫描完名片后，会跳转到扫描结果页面，在这个页面可以新建联系人、新建客户、新建销售线索等，和CRM里面的扫名片功能
+
+代码样例
+```javascript
+FSOpen.device.scanCard();
+``` 
+
+方法名：FSOpen.device.scanCard    
+JS版本：2.2   
+客户端支持版本：6.5.3及以上   
+
+

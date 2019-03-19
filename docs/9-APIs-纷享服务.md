@@ -1656,6 +1656,10 @@ JS版本：2.0.0
             <td>service.crm.selectContact</td>
             <td>选择CRM客户联系人</td>
         </tr>
+        <tr>
+            <td>service.crm.list</td>
+            <td>跳转CRM对象列表页面</td>
+        </tr>
     </tbody>
 </table>
 
@@ -1969,6 +1973,26 @@ JS版本：2.1.7
 | -------------| --------------| -------------|
 | contactId    | String        | 联系人ID       |
 | contactName  | String        | 联系人名称     |
+
+
+#### 跳转到CRM对象列表页面    
+
+代码样例
+```javascript
+FSOpen.service.crm.list({
+    objectType:"LeadsPoolObj"
+});
+``` 
+
+方法名：FSOpen.service.crm.list  
+JS版本：2.2      
+客户端支持版本：6.5.3及以上    
+
+调用参数说明：      
+
+| 参数               | 类型          | 必须 | 说明         |
+| -------------------| --------------| -----| -------------|
+| objectType         | String       | 是   | CRM对象的apiName |
 
 
 ### BI服务
