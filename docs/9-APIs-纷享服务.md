@@ -1817,7 +1817,8 @@ JS版本：2.1.6
 | 参数               | 类型          | 必须 | 说明         |
 | -------------------| --------------| -----| -------------|
 | objectType         | String        | 是   | 对象类型，具体见下表对应关系 |
-| objectData         | Map<String,Object>        | 否   | 新建CRM自定义对象的默认参数 |
+| objectData         | Map<String,Object>        | 否   | 新建CRM自定义对象主对象的默认参数 |
+| detailObjectData   | HashMap<String,List<HashMap<String,Object>>>        | 否   | 新建CRM自定义对象从对象的默认参数 |
 
 `objectType`的对应关系：   
 
