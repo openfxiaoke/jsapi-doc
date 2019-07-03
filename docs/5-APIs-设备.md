@@ -40,6 +40,10 @@
             <td>device.scanCard</td>
             <td>扫名片</td>
         </tr>
+        <tr>
+            <td>device.call</td>
+            <td>打电话</td>
+        </tr>
     </tbody>
 </table>
 
@@ -216,6 +220,22 @@ FSOpen.device.scanCard();
 
 方法名：FSOpen.device.scanCard    
 JS版本：2.2   
-客户端支持版本：6.5.3及以上   
+客户端支持版本：6.5.3及以上
 
+#### 打电话       
+打开系统的默认打电话APP，并传入默认的电话号码
 
+代码样例
+```javascript
+FSOpen.device.call();
+``` 
+
+方法名：FSOpen.device.call()    
+JS版本：2.2   
+客户端支持版本：6.7及以上
+
+调用参数说明：     
+
+| 参数      | 类型        | 必须 | 说明         |
+| ----------| ------------| -----| -------------|
+| tel  | String      | 是   | 电话号码 |

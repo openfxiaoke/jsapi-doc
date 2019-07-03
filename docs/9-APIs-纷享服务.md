@@ -1121,7 +1121,7 @@ JS版本：2.0.0
 
 | 参数      | 类型        | 必须 | 说明         |
 | ----------| ------------| -----| -------------|
-| type      | String      | 否   | 分享的资源类型，目前支持`text`-文字，`link`-链接，`image`-图片，`file`-文件。当`link`参数为空时，默认`text`类型，否则默认为`link`类型。 |
+| type      | String      | 否   | 分享的资源类型，目前支持`text`-文字，`link`-链接，`image`-图片，`file`-文件，`UGT`-UGT消息,type=UGT时，content为必填参数。当`link`参数为空时，默认`text`类型，否则默认为`link`类型。 |
 | title     | String      | 否   | 资源类型为`link`时使用，表示分享标题，默认当前页面标题 |
 | desc      | String      | 否   | 资源类型为`link`时使用，表示分享摘要描述，默认当前页面描述（`<meta name="description" content="网页摘要内容在这里填写">`标签中的内容），取不到则显示页面URL。|
 | link      | String      | 否   | 资源类型为`link`时使用，表示分享链接地址，默认当前页面链接 |
