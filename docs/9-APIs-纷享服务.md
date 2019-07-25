@@ -118,6 +118,7 @@ JS版本：2.0.0
 | excludedDepartments | Array[Number]| 否   | 过滤器，需要从当前设定范围（参考`scope`）排除掉的部门ID列表。js 2.0.0暂未实现。 |
 | hasEmail            | Boolean      | 否   | 过滤器，为`true`代表仅显示有Email的用户数据。不指定则全部显示。 |
 | hasPhone            | Boolean      | 否   | 过滤器，为`true`代表仅显示有电话号码的用户数据。不指定则全部显示。 |
+| singleChoice            | Boolean      | 否   | 只有在选同事和部门界面只有同事TAB和部门TAB的情况下，才支持单选功能，如果有最近TAB和群组TAB，则不支持单选功能 |
 
 返回说明：  
 
@@ -1130,6 +1131,7 @@ JS版本：2.0.0
 | size      | String      | 否   | 资源类型为`image`或`file`时使用，表示资源大小 |
 | npath     | String      | 否   | 资源类型为`image`或`file`时使用，表示资源存储地址。资源需是存储在纷享平台上，采用N-Path地址引用，如`N_201512_08_101239c8308f4ea7325f69df4fba386f1.pptx`。 |
 | content   | String      | 否   | 资源类型为`text`时使用，表示文件内容 |
+| outerContacts   | boolean      | 否   | 是否显示外部联系人TAB，默认显示 6.7新增 |
 
 #### 转发到工作流     
 
