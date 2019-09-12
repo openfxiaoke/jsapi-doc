@@ -946,7 +946,7 @@ FSOpen.service.mail.view({
 ``` 
 
 方法名：FSOpen.service.mail.view  
-JS版本：2.2
+JS版本：2.2    
 客户端支持版本：6.7.1及以上
 
 调用参数说明：      
