@@ -929,6 +929,34 @@ JS版本：2.1.5
 | body       | String        | 邮件内容 |
 
 
+#### 查看邮件详情
+
+代码样例
+```javascript
+FSOpen.service.mail.view({
+    mailID: 100,
+    mailBoxId: -1,
+    onSuccess: function(resp) {
+        alert('成功');
+    },
+    onFail: function(error) {
+        alert('失败，错误码：' + error.errorCode);
+    }
+});
+``` 
+
+方法名：FSOpen.service.mail.view  
+JS版本：2.2
+客户端支持版本：6.7.1及以上
+
+调用参数说明：      
+
+| 参数       | 类型          | 必须 | 说明         |
+| -----------| --------------| -----| -------------|
+| mailID         | long | 是   | 邮件ID |
+| mailBoxId         | long | 是   | 邮箱ID，如果没有，请传-1 |
+
+
 
 ### 支付 
 
