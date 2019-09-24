@@ -24,6 +24,10 @@
             <td>runtime.showUpdate</td>
             <td>提示版本升级</td>
         </tr>
+        <tr>
+            <td>runtime.getPhoneInfo</td>
+            <td>获取手机信息</td>
+        </tr>
     </tbody>
 </table>
 
